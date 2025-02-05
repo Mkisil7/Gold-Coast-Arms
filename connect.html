@@ -6,22 +6,44 @@
     <title>Gold Coast Guns - Connect</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: gold;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
         form {
             display: flex;
             flex-direction: column;
-            max-width: 400px;
-            margin: 0 auto;
+            align-items: center;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+        .input-group input {
+            flex: 1;
         }
         label, input, textarea, button {
             margin-bottom: 10px;
             width: 100%;
+            font-size: 18px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
         }
         button {
-            background-color: gold;
-            color: black;
-            padding: 10px;
+            background-color: black;
+            color: gold;
+            padding: 15px;
             border: none;
             cursor: pointer;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -36,17 +58,12 @@
     <div class="container">
         <h1>Contact Us</h1>
         <p>Have questions? Reach out to us!</p>
-       <form action="https://formsubmit.co/your@email.com" method="POST">
-
-            <label for="name">Name:</label>
-            <input type="text" name="name" placeholder="Full Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Email Address" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-            
+        <form action="#" method="post">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
