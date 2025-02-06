@@ -5,9 +5,23 @@
   box-sizing: border-box;
 }
 
+/* Container for the header to align logo and navigation */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #3b5323; /* Matches your military theme */
+}
+
+/* Logo styling */
+.logo img {
+  height: 50px; /* Adjust this value to change the logo size */
+}
+
 /* Base styling for body */
 body {
-  font-family: Arial, sans-serif; /* clean and highly readable */
+  font-family: Arial, sans-serif; 
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
@@ -29,11 +43,12 @@ header h1 {
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 1em;
+  margin-left: 1em;
 }
 
 nav ul li a {
