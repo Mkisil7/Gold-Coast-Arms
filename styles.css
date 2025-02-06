@@ -63,7 +63,7 @@ nav ul li a:hover {
 
 /* Hero section with a placeholder background image */
 .hero {
-  background: url('https://via.placeholder.com/1200x400?text=Gold+Coast+Arms') no-repeat center center/cover;
+  background: src(contactpage.jpg) no-repeat center center/cover;
   color: #fff;
   padding: 4em 1em;
   text-align: center;
