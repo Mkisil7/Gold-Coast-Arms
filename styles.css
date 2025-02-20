@@ -1,33 +1,161 @@
-/* Hero section with a proper background image and text enhancements */
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the header to align logo and navigation */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #3b5323; 
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px; /* Adjust this value to change the logo size */
+}
+
+/* Base styling for body */
+body {
+  font-family: Arial, sans-serif; 
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header styling with military-inspired dark olive green */
+header {
+  background-color: #3b5323;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5em;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section with a placeholder background image */
 .hero {
-  background: url('contactpage.jpg') no-repeat center center/cover;
+  background: src(contactpage.jpg) no-repeat center center/cover;
   color: #fff;
   padding: 4em 1em;
   text-align: center;
-  position: relative;
-  overflow: hidden;
 }
 
-/* Overlay for the hero section to enhance text readability */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity for desired darkness */
-  z-index: 0;
+/* Section styling */
+.about, .contact, .shop-items {
+  padding: 2em 1em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Ensuring hero text is above the overlay */
-.hero > * {
-  position: relative;
-  z-index: 1;
+h2, h3 {
+  margin-bottom: 1em;
+  color: #2c3e50;
 }
 
-/* Optional: Add text shadow for even more contrast */
-.hero h2,
-.hero p {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+/* Product grid styling for shop page */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1em;
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.product button {
+  background-color: #3b5323;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.product button:hover {
+  background-color: #2e421b;
+}
+
+/* Contact form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin: 0.5em 0 0.2em;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #3b5323;
+  color: #fff;
+  border: none;
+  padding: 0.7em;
+  margin-top: 1em;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+form button:hover {
+  background-color: #2e421b;
+}
+
+/* Footer styling */
+footer {
+  background-color: #3b5323;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
 }
