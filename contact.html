@@ -7,38 +7,40 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <div class="header-container">
-    <!-- Logo linking to the homepage -->
-    <a href="/" class="logo">
-      <img src="gcalogo.jpg" alt="Gold Coast Arms Logo" />
-    </a>
-    
-    <!-- Navigation Menu -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="header-container">
+      <!-- Logo linking to the homepage -->
+      <a href="index.html" class="logo">
+        <img src="gcalogo.jpg" alt="Gold Coast Arms Logo" />
+      </a>
+      
+      <!-- Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="contact">
       <h2>Contact Us</h2>
       <p>
         If you have any questions or would like more information about our products, please fill out the form below or contact us directly.
       </p>
-<form action="https://formsubmit.co/sababa.m.2000@gmail.com" method="POST">
+      
+      <form action="https://formsubmit.co/sababa.m.2000@gmail.com" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
